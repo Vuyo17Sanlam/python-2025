@@ -70,3 +70,16 @@ for i in range(1, 11):
 > - U means untracted
 > - A means added
 >   Commit message: should be why you did it.
+
+## intro to Git
+
+1. git init
+2. Stage all
+3. Provide message - why? > What?
+4. When to commit
+   1. commit at least 3 times in an hour.
+   2. Logicical commit - complete commit (No bugs)
+   3. small commit - DOn't commit > 10 files
+5. Sync to github( Online)
+
+> General rule of thumb for biginners is to commit 3 times in an hour .
