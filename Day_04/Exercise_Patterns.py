@@ -18,7 +18,7 @@ while count <= row:
     count += 1
 
 
-# Task 1.4 (Refactor with for loop)
+# Task 1.4
 row = int(input("Please tell the no of rows?: "))
 pattern = input("Please tell the pattern?: ")
 for i in range(row):
