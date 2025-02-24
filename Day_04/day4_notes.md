@@ -70,6 +70,13 @@ Motivation: version control for your project. This enables the dev to confident 
    3. Small commit - Dont commit >10 files
 5. Sync to github (online)
 
+## Git vs Github
+
+- Git - Version control system (software) - Does not need internet
+- Github - GDrive (Storing files)
+- Linus Torvalds - devloped git as side project to maintain Linux
+-
+
 ![alt text](image-3.png)
 
 - repitition operator ("\*")
