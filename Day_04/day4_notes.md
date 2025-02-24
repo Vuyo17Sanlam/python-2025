@@ -6,62 +6,71 @@
 >
 > ![alt text](image-2.png)
 
-## control flow
+# Control flow
 
-- Decision Tree
-  'if_else'
-  'if_elif_else'
-  Loops
+1. Decision tree
+   1. `if..else`
+   2. `if..elif..else`
+2. Loops
+   1. `while`
+   2. `for`
 
-1. while
-2. for
+## Loops
 
-Purpose: simply repeating statements
+Purpose: Simply repeating statements
 
 ```py
-print("vote for Jevani")
-print("vote for Jevani")
-print("vote for Jevani")
+print("Vote for Jevan 🎊")
+print("Vote for Jevan 🎊")
+print("Vote for Jevan 🎊")
 ```
 
-### while
+### `while`
 
-![alt text](image-3.png)
+Executes the statement while the condition is `True`
 
 ```py
-# print("Vote for Jevan 🎊")
-# print("Vote for Jevan 🎊")
-# print("Vote for Jevan 🎊")
+while (condition)
 
+```
 
-# Refactor in while loop
+```py
+i = 1
 
-# i = 1
+while i <= 3:
+    print("Vote for Jevan 🎊")
+    i = i + 1
 
-# while i <= 3:
-#     print("Vote for Jevan 🎊")
-#     i = i + 1
+print("Voting Ended 🎊")
+```
 
-# print("Voting Ended 🎊")
+### `for`
 
+`for` and `range` (pair)
 
-# Refactor in for loop
-# for and range (pair)
+1. `range()` always starts with 0
+2. `range()` excludes the end
+3. `range(start, end, step)`
 
-# range always starts with 0
-# range excludes the end
-
-# range(start, end, step)
-# range(3) -> range(end)
-# for i in range(3):
-#     print(i)
-
-
-# range(start, end) -> range(start, end)
-# for and range takes care of incrementing `i`
-for i in range(1, 11):
+```py
+for i in range(3):
     print(i)
 ```
+
+## Intro to Git
+
+Motivation: version control for your project. This enables the dev to confident with your change.
+
+1. git init
+2. Stage all
+3. Provide message - Why? > What?
+4. When to commit
+   1. Commit at least 3 times in an hour
+   2. Logical commit - Complete commit (No bugs)
+   3. Small commit - Dont commit >10 files
+5. Sync to github (online)
+
+![alt text](image-3.png)
 
 - repitition operator ("\*")
 
@@ -70,16 +79,3 @@ for i in range(1, 11):
 > - U means untracted
 > - A means added
 >   Commit message: should be why you did it.
-
-## intro to Git
-
-1. git init
-2. Stage all
-3. Provide message - why? > What?
-4. When to commit
-   1. commit at least 3 times in an hour.
-   2. Logicical commit - complete commit (No bugs)
-   3. small commit - DOn't commit > 10 files
-5. Sync to github( Online)
-
-> General rule of thumb for biginners is to commit 3 times in an hour .
