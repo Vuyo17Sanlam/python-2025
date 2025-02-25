@@ -22,16 +22,16 @@
 # print(list2)
 
 
-# Task 2.1
+# Task 2.2
 
-
-total_tax = 0
 total = 0
-shopping_items = [1000, 5000, 4000, 2000, 3000]
-for i in range(len(shopping_items)):
-    total += shopping_items[i]
-    total_tax += shopping_items[i] + shopping_items[i] * 0.1
+tax = 0.1
+shopping_items = [1_000, 5_000, 4_000, 2_000, 3_000]
+for price in shopping_items:
+    total += price
+
+tax_amt = total * tax
 
 print(f"Your total is: R{total}")
-print(f"tax: {total_tax - total}")
-print(f"Your total with tax is: R{total_tax}")
+print(f"tax (10%) is: R{tax_amt}")
+print(f"Your grand total is: R{total + tax_amt}")
