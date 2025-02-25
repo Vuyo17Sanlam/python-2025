@@ -24,9 +24,12 @@ points = [(3, 4), (6, 12), (10, 13)]
 # print(distances)
 
 
-distances = []
-for point in points:
-    x, y = point
-    distance = (x**2 + y**2) ** 0.5
-    distances.append(round(distance, 2))
+# distances = []
+# for point in points:
+#     x, y = point
+#     distance = (x**2 + y**2) ** 0.5
+#     distances.append(round(distance, 2))
+# print(distances)
+
+distances = [round((x**2 + y**2) ** 0.5, 2) for x, y in points]
 print(distances)
