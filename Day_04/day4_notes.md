@@ -77,6 +77,8 @@ Motivation: version control for your project. This enables the dev to confident 
 - Linus Torvalds - devloped git as side project to maintain Linux
 -
 
+ipynb - interactive python notebook
+
 ![alt text](image-3.png)
 
 - repitition operator ("\*")
