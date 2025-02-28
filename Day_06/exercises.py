@@ -28,60 +28,90 @@
 # print ( spiderman.get("city") )
 
 
-captain_america = {
-    "name": "Steve Rogers 🦸‍♂️",
-    "age": 100,
-    "height": 185,
-    "address": {"city": "Brooklyn", "country": "US"},
-}
+# captain_america = {
+#     "name": "Steve Rogers 🦸‍♂️",
+#     "age": 100,
+#     "height": 185,
+#     "address": {"city": "Brooklyn", "country": "US"},
+# }
 
 
-spiderman = {
-    "name": "Peter Parker",
-    "age": 18,
-    "team_name": "Avengers",
-    "team": ["Iron Man", "Thor", "Hulk", "Captain America"],
-}
+# spiderman = {
+#     "name": "Peter Parker",
+#     "age": 18,
+#     "team_name": "Avengers",
+#     "team": ["Iron Man", "Thor", "Hulk", "Captain America"],
+# }
 
-hulk = {
-    "name": "Bruce Banner",
-    "age": 35,
-}
+# hulk = {
+#     "name": "Bruce Banner",
+#     "age": 35,
+# }
 
-heroes = [captain_america, spiderman, hulk]
+# heroes = [captain_america, spiderman, hulk]
 
-captain_america = {
-    "name": "Steve Rogers 🦸‍♂️",
-    "age": 100,
-    "height": 185,
-    "address": {"city": "Brooklyn", "country": "US"},
-}
-
-
-spiderman = {
-    "name": "Peter Parker",
-    "age": 18,
-    "team_name": "Avengers",
-    "team": ["Iron Man", "Thor", "Hulk", "Captain America"],
-}
-
-hulk = {
-    "name": "Bruce Banner",
-    "age": 35,
-}
-
-heroes = [captain_america, spiderman, hulk]
-
-for hero in heroes:
-    adr = hero.get("address", {}).get("city")
-    hero_name = hero["name"]
-    if adr is None:
-        print(f"{hero_name} location is Top Secret 🔒")
-    else:
-        print(f"{hero_name} lives in {adr}")
+# captain_america = {
+#     "name": "Steve Rogers 🦸‍♂️",
+#     "age": 100,
+#     "height": 185,
+#     "address": {"city": "Brooklyn", "country": "US"},
+# }
 
 
-# Output
+# spiderman = {
+#     "name": "Peter Parker",
+#     "age": 18,
+#     "team_name": "Avengers",
+#     "team": ["Iron Man", "Thor", "Hulk", "Captain America"],
+# }
+
+# hulk = {
+#     "name": "Bruce Banner",
+#     "age": 35,
+# }
+
+# heroes = [captain_america, spiderman, hulk]
+
+# for hero in heroes:
+#     adr = hero.get("address", {}).get("city")
+#     hero_name = hero["name"]
+#     if adr is None:
+#         print(f"{hero_name} location is Top Secret 🔒")
+#     else:
+#         print(f"{hero_name} lives in {adr}")
+
+
+# # Output
 # Steve Rogers 🦸‍♂️ lives in Brooklyn
 # Peter Parker location is Top Secret 🔒
 # Bruce Banner location is Top Secret 🔒
+
+
+employees = [
+    {"name": "Chelo", "experience": 3},
+    {
+        "name": "Diyali",
+    },
+    {
+        "name": "Luvuyo",
+    },
+    {"name": "Jevan", "experience": 4},
+]
+
+# increase the experience year in each employee
+# for employee in employees:
+#     if employee.get("experience"):
+#         employee["experience"] += 1
+#     else:
+#         employee["experience"] = 1
+
+
+for employee in employees:
+    if employee["experience"] > 5:
+        employee["status"] = "Senior"
+    elif employee["experience"] > 3:
+        employee["status"] = "Mid-Level"
+    else:
+        employee["status"] = "Junior"
+
+print(employees)
