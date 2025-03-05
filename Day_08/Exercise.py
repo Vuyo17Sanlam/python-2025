@@ -166,14 +166,12 @@ def show_books():
 
 
 def menu_option():
-    print(
-        """
+    print("""
         Main menu:
         1. Add book to the library
         2. Print all the books
         3. Exit
-        """
-    )
+        """)
 
 
 while True:
