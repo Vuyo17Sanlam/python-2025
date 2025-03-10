@@ -10,18 +10,21 @@
         color: white;
         font-family: Arial, sans-serif;
         text-align: center;
-        padding: 20px;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        margin: 0px;
       }
 
       .container {
-        max-width: 400px;
-        margin: auto;
+        max-width: 350px;
         background-color: hsl(2deg 88.24% 6.67%);
       }
 
       .poster {
         width: 100%;
         border-radius: 40px;
+        object-fit: cover;
       }
 
       .title {
@@ -37,11 +40,10 @@
       }
 
       .description {
-        font-size: 14px;
-        line-height: 1.5;
         margin-top: 10px;
         color: #d3d3d3;
-        padding: 0 15px;
+        padding-left: 15px;
+        padding-right: 15px;
       }
     </style>
   </head>
@@ -49,7 +51,9 @@
     <div class="container">
       <img src="beast_image.jpg" alt="Beast Movie Poster" class="poster" />
       <div class="title">Beast</div>
-      <p class="meta">2022 • Action/Dark comedy • 2h 38m</p>
+      <p class="meta">
+        2022 <highlight>• </highlight> Action/Dark comedy • 2h 38m
+      </p>
       <p class="description">
         Beast is an upcoming Indian Tamil-language action thriller film written
         and directed by Nelson and produced by Sun Pictures. The film stars
