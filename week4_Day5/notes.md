@@ -142,7 +142,117 @@ Exercise 13 — Tasks
 
 Exercise 14 — Tasks
 
-1. The director for A Bug's Life is incorrect, it was actually directed by John Lasseter ✓
+1. The director for A Bug's Life is incorrect, it was actually directed by John Lasseter
+   ```sql
+    update movies
+    set director = 'John Lasseter'
+    where id = 2
+   ```
 2. The year that Toy Story 2 was released is incorrect, it was actually released in 1999
+   ```sql
+   update movies
+   set director = 'John Lasseter'
+   where id = 2
+   ```
 3. Both the title and director for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich
    Stuck?
+   ```sql
+    update movies
+    set Title = 'Toy Story 3', director = 'Lee Unkrich'
+    where id = 11
+   ```
+
+![alt text](image-4.png)
+
+## Delete
+
+![alt text](image-5.png)
+
+Exercise 15 — Tasks
+
+1. This database is getting too big, lets remove all movies that were released before 2005.
+   ```sql
+    delete from movies where year < 2005
+   ```
+2. Andrew Stanton has also left the studio, so please remove all movies directed by him.
+   ```sql
+    delete from movies where director ='Andrew Stanton'
+   ```
+
+## Exercise 16 — Tasks
+
+![alt text](image-6.png)
+
+1. Create a new table named Database with the following columns:
+   – Name A string (text) describing the name of the database
+   – Version A number (floating point) of the latest version of this database
+   – Download_count An integer count of the number of times this database was downloaded
+
+```sql
+    create table Database(
+    Name text,
+    Version float,
+    Download_count integer
+);
+```
+
+> DML (Data Manipulatation Language) - CRUD
+
+> DDL (Data Definition Language) - manipulation of the table itself, create and delelte
+
+- If Not Exist -> silently fail
+
+- float (3 decimal), Double( 6 decimal), Real(12 decimals)
+
+- Character(few letters, yes or nor/ male or female), Varchar(250 characters) text(patagraphs)
+
+- Blob -> stores binary data, stores path of the image
+
+---
+
+in real life we make use of **primary key** and **autoincrement**
+
+- Unique - null is allowed, can have multiple uniques in one table
+- Not Null - there should be a value it cannot be null
+- Check - check if a particular condition is meet before allowing a record in a database
+- foreign key -
+
+---
+
+Create of the table is called the schema or the blueprint
+
+---
+
+```sql
+create table Department(
+    DepartmentID integer primary Key,
+    DepartmentName varchar Not Null
+);
+```
+
+## Exercise 17 — Tasks
+
+1. Add a column named Aspect_ratio with a FLOAT data type to store the aspect-ratio each movie was released in.
+   ```sql
+    ALTER TABLE Movies
+   ADD COLUMN Aspect_ratio FLOAT;
+   ```
+1. Add another column named Language with a TEXT data type to store the language that the movie was released in. Ensure that the default for this language is English.
+   ```sql
+    ALTER TABLE Movies
+   ADD COLUMN Language  Text DEFAULT 'English';
+   ```
+
+## Drop the table
+
+![alt text](image-7.png)
+
+1. We've sadly reached the end of our lessons, lets clean up by removing the Movies table
+   ```sql
+    drop table movies;
+   ```
+2. And drop the BoxOffice table as well
+
+   ```sql
+
+   ```
