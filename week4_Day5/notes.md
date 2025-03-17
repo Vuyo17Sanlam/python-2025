@@ -122,3 +122,27 @@ Exercise 12 — Tasks
    ```sql
     select director, sum(domestic_sales)+sum(international_sales) as total_amount from movies inner join boxoffice on id=movie_id group by director
    ```
+
+### SQL Lesson 13: Inserting rows
+
+![alt text](image-3.png)
+
+Exercise 13 — Tasks
+
+1. Add the studio's new production, Toy Story 4 to the list of movies (you can use any director)
+
+   ```sql
+    INSERT INTO movies VALUES (4, "Toy Story 4", "LVO", 2025, 95);
+   ```
+
+2. Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table.
+   ```sql
+   INSERT INTO boxoffice VALUES (4, 8.7, 340000000, 270000000);
+   ```
+
+Exercise 14 — Tasks
+
+1. The director for A Bug's Life is incorrect, it was actually directed by John Lasseter ✓
+2. The year that Toy Story 2 was released is incorrect, it was actually released in 1999
+3. Both the title and director for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich
+   Stuck?
